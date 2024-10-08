@@ -3520,9 +3520,9 @@ filter: hue-rotate(90deg);
   width: 67%;
   justify-content: space-around;
   border-radius: 4rem;
-  background: linear-gradient(to right, #e2e2e2, #cecfd1, #aaa, #999);
   padding: 2px;
   border: 1px solid var(--just-white);
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 /* #ctnValueStockFooter,
 #ctnValueOrderFooter {
@@ -3791,13 +3791,9 @@ filter: hue-rotate(90deg);
   box-shadow: -5px -5px 10px #212121, 5px 5px 10px #141414;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  /* font-weight: 600; */
   text-shadow: 1px 1px 0 #ffdde1;
-  /* background: linear-gradient(to right, #ffdde1, #ee9ca7); */
-  /* background: linear-gradient(to right, #fcfcfc, #cecfd1); */
-  background: linear-gradient(to right, #fcfcfc, #cecfd1, #aaa, #999);
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   color: black;
-  /* border: 0.5px solid white; */
   border: 1px solid #fdb931;
 }
 
