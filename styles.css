@@ -4153,6 +4153,14 @@ filter: hue-rotate(90deg);
 }
 
 
+@media screen and ( max-width: 323px ) {
+
+  .ctn-btn-limpiar-cards.btnFloating {
+    width: 96%;
+  }
+
+}
+
 @media screen and ( max-width: 550px ) {
 
   .show-list {
@@ -4162,7 +4170,6 @@ filter: hue-rotate(90deg);
   }
 
 }
-
 
 @media screen and ( min-width: 320px ) and ( max-height: 615px ) {
   header {
