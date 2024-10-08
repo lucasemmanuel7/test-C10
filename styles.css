@@ -4160,7 +4160,7 @@ filter: hue-rotate(90deg);
 
 }
 
-@media screen and ( max-width: 323px ) {
+@media screen and ( min-width: 314px ) and ( max-width: 323px ) {
 
   .ctn-btn-limpiar-cards.btnFloating {
     width: 96%;
