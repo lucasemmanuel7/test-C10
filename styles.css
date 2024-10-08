@@ -4152,6 +4152,13 @@ filter: hue-rotate(90deg);
   font-family: monospace;
 }
 
+@media screen and ( min-width: 302px ) and ( max-width: 313px ){
+
+  .ctn-btn-limpiar-cards.btnFloating {
+    width: 100%;
+  }
+
+}
 
 @media screen and ( max-width: 323px ) {
 
