@@ -489,8 +489,8 @@ function yesResetCard(i) {
 
   countStock.innerHTML = allProducts.filter(a => a.order === 0 ).length;
   countOrder.innerHTML = allProducts.filter(a => a.order > 0 ).length;
-  // ctnValueStockFooter.innerHTML = allProducts.filter(a => a.order === 0 ).length;
-  // ctnValueOrderFooter.innerHTML = allProducts.filter(a => a.order > 0 ).length;
+  countStockNav.innerHTML = allProducts.filter(a => a.order === 0 ).length;
+  countOrderNav.innerHTML = allProducts.filter(a => a.order > 0 ).length;
 
   showHTML();
 }
@@ -824,8 +824,8 @@ for (let i = 0; i < allCards.length; i++) {
 
         countStock.innerHTML = allProducts.filter(a => a.order === 0 ).length;
         countOrder.innerHTML = allProducts.filter(a => a.order > 0 ).length;
-        // ctnValueStockFooter.innerHTML = allProducts.filter(a => a.order === 0 ).length;
-        // ctnValueOrderFooter.innerHTML = allProducts.filter(a => a.order > 0 ).length;
+        countStockNav.innerHTML = allProducts.filter(a => a.order === 0 ).length;
+        countOrderNav.innerHTML = allProducts.filter(a => a.order > 0 ).length;
         
       
       showHTML();
@@ -885,6 +885,9 @@ let valorTotal = parseInt(document.querySelector('.total-pagar').textContent);
 let countProducts = document.querySelector('#contador-productos');
 let countStock = document.querySelector('#btnArrowDown');
 let countOrder = document.querySelector('#btnArrowUp');
+let countStockNav = document.querySelector('#valueStockNav');
+let countOrderNav = document.querySelector('#valueOrderNav');
+    
 // let ctnValueOrderFooter = document.querySelector('#ctnValueOrderFooter');
 // let ctnValueStockFooter = document.querySelector('#ctnValueStockFooter');
 
@@ -990,8 +993,8 @@ for (let i = 0; i < allCards.length; i++) {
 
         countStock.innerHTML = allProducts.filter(a => a.order === 0 ).length;
         countOrder.innerHTML = allProducts.filter(a => a.order > 0 ).length;
-        // ctnValueStockFooter.innerHTML = allProducts.filter(a => a.order === 0 ).length;
-        // ctnValueOrderFooter.innerHTML = allProducts.filter(a => a.order > 0 ).length;
+        countStockNav.innerHTML = allProducts.filter(a => a.order === 0 ).length;
+        countOrderNav.innerHTML = allProducts.filter(a => a.order > 0 ).length;
 
         console.log("totalPagar ", typeof valorTotal, valorTotal)
 
@@ -1102,8 +1105,8 @@ function funcion2(i) {
 
         countStock.innerHTML = allProducts.filter(a => a.order === 0 ).length;
         countOrder.innerHTML = allProducts.filter(a => a.order > 0 ).length;
-        // ctnValueStockFooter.innerHTML = allProducts.filter(a => a.order === 0 ).length;
-        // ctnValueOrderFooter.innerHTML = allProducts.filter(a => a.order > 0 ).length;
+        countStockNav.innerHTML = allProducts.filter(a => a.order === 0 ).length;
+        countOrderNav.innerHTML = allProducts.filter(a => a.order > 0 ).length;
 
         if (allProducts.length === 0) {
           totalOfProducts = 0;
@@ -2162,8 +2165,8 @@ yesDeleteInfoCards.addEventListener('click', () => {
 
         countStock.innerHTML = allProducts.filter(a => a.order === 0 ).length;
         countOrder.innerHTML = allProducts.filter(a => a.order > 0 ).length;
-        // ctnValueOrderFooter.innerHTML = allProducts.filter(a => a.order > 0 ).length;
-        // ctnValueStockFooter.innerHTML = allProducts.filter(a => a.order > 0 ).length;
+        countStockNav.innerHTML = allProducts.filter(a => a.order === 0 ).length;
+        countOrderNav.innerHTML = allProducts.filter(a => a.order > 0 ).length;
 
         if (allProducts.length === 0) {
           totalOfProducts = 0;
