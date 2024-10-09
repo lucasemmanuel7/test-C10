@@ -2944,7 +2944,7 @@ input:disabled {
 
 
 .hover-info {
-  transform: rotateX(90deg) translateZ(20px);
+  transform: rotateX(90deg) translateZ(25px);
 }
 
 .info-cart-product {
