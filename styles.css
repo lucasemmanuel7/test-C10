@@ -2988,8 +2988,7 @@ input:disabled {
   font-size: 12px;
   /* background: white; */
   width: 100%;
-  /* height: 27px; */
-  height: 33px;
+  height: 27px; 
   border: 1px solid white;
   background: yellow;
   /* border-radius: 10px; */
@@ -4305,6 +4304,12 @@ filter: hue-rotate(90deg);
     height: 100%;
   }
 
+  .ctn-name-product-and-close,
+  .ctn-name-product-and-close_green, 
+  .ctn-name-product-and-close_red {
+    height: 33px;
+  }
+	
   .info-cart-product {
     flex-direction: column;
     gap: 10px;
