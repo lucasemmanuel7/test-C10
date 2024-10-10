@@ -197,6 +197,8 @@ function closeNav(i) {
    console.log("HHR");
  }, 10000);
 
+ document.querySelector('.ctn-opacy-no-found-wsp').classList.remove('visible');
+
 }
 
 function closeList() {
