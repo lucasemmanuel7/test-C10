@@ -1048,7 +1048,7 @@ border: 1px solid #000000; */
 /*   +++++++++++++++++         CARD          ++++++++++++++++++     */
 
 .container_cards{
-  width: 83%;      /* width: 100%; */
+  width: 90%;      /* width: 100%; */
   /* max-width: 1100px; */
   margin: auto;
   margin-top: 12px;   /*  margin-top: 25px; */
@@ -4597,7 +4597,7 @@ filter: hue-rotate(90deg);
 
 @media only screen and (min-width: 392px) and (max-width: 700px) {
   .container_cards{
-      width: 88%;
+      width: 85%;
       grid-template-columns: repeat(1, 1fr);
   }
 
