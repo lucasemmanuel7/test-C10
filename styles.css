@@ -1059,7 +1059,28 @@ width: 90%;      /* width: 100%; */
   grid-gap: 20px;
   background-color: #faf3f3;
 }
- 
+
+.ctn-btn-question {
+  display: flex;
+  position: fixed;
+  background-color: black;
+  width: 7%;
+  height: 100px;
+  align-items: center;
+  z-index: 14000;
+  left: 0;
+  top: 50%;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.btn-icon-question {
+  width: 90%;
+  height: 85%;
+  font-size: 20px;
+  border-radius: 4rem;
+}
+
 .container_cards > .product_card {
   position: relative;
 }
@@ -4351,7 +4372,7 @@ filter: hue-rotate(90deg);
 
 @media screen and (min-width:700px){
   .container_cards{
-      width: 90%;
+      width: 92%;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
       /* grid-template-rows: 200px; */
