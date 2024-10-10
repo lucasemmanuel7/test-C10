@@ -1146,6 +1146,13 @@ width: 90%;      /* width: 100%; */
   color: #fefefe;
 }
 
+.wsp-text {
+  background-color: mediumspringgreen;
+  padding-left: 12px;
+  padding-right: 10px;
+  color: var(--black);
+  border-radius: 5px;
+}
 /* .cartel-aviso.active {
   display: flex;
 } */
