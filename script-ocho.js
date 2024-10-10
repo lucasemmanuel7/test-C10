@@ -78,18 +78,58 @@ const viewportWsp = document.querySelector("#viewportWsp");
 const abrirWsp = document.querySelector("#wsp-icon-btn");
 const closeViewportWsp = document.querySelector("#close-wsp-viewport");
 
-abrirWsp.addEventListener("click", () => {
-  viewportWsp.classList.add("visible-viewport-wsp");
-  cartProduct = document.querySelectorAll(".quantity-stock-product")
 
-  for (let i = 0; i < cartProduct.length; i++){
-    stockData = document.querySelectorAll('.quantity-stock-product')[i].textContent;
-    if(stockData === '-' ){
-      console.log("rowProduct", "constancia");
+abrirWsp.addEventListener("click", () => {
+
+    const todoIgual = arr => arr.every(v => v === arr[0])
+
+    stockDataValues = allProducts.map((function (product) { if(product.stock === -1){ return true } else { return false }}));
+
+    stockDataIDs = allProducts.map((function (product) { if(product.stock === -1){ return product.card }}));
+
+    stockDataTitles = allProducts.map((function (product) { if(product.stock === -1){ return product.title }}));
+
+    stockDataPosition = allProducts.map((function (product) { if(product.stock === -1){ return product.position }}));
+
+
+    stockDataIDs = stockDataIDs.filter(function(id){ return id != undefined });
+    stockDataTitles = stockDataTitles.filter(function(title){ return title != undefined });
+    stockDataPosition = stockDataPosition.filter(function(posicion){ return posicion != undefined });
+
+    const booleanTest = stockDataValues.map(function(){ if( stockDataValues.length === 1 && stockDataValues[0] === true) { return false } else { return true }});
+
+    const ctnOpacyNoFoundWsp = document.querySelector('.ctn-opacy-no-found-wsp');
+    const ctnCristalNoFoundWsp = document.createElement('div');
+    ctnOpacyNoFoundWsp.innerHTML = '';
+
+    if( todoIgual(stockDataValues) === false || todoIgual(stockDataValues) === true && booleanTest[0] === false ) {
+
+      ctnCristalNoFoundWsp.classList.add('cartel-cristal-no-found-wsp');
+
+      ctnOpacyNoFoundWsp.classList.add('visible');
+
+        ctnCristalNoFoundWsp.innerHTML +=  `
+
+        <div class="ctn-cartel-aviso-no-found-wsp">
+          <div class="cartel-aviso-no-found-wsp">
+            Falta reportar cantidad de STOCK en el producto: <br> 
+            <span class="name-product-error">${stockDataTitles}</span>
+          </div>
+          <a class="btn-to-product-error" href="#${stockDataIDs}" onclick="closeNav(stockDataPosition[0][0])">Ir al PRODUCTO</a>
+        </div>
+        
+      `
+
+    } if( todoIgual(stockDataValues) === true &&  booleanTest[0] === true ) {
+
+      viewportWsp.classList.add("visible-viewport-wsp");
+
     }
-  }
   
+    ctnOpacyNoFoundWsp.append(ctnCristalNoFoundWsp);
+
 })
+
 
 closeViewportWsp.addEventListener("click", () => {
   viewportWsp.classList.remove("visible-viewport-wsp");
