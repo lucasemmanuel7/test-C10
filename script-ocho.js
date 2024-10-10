@@ -112,7 +112,8 @@ abrirWsp.addEventListener("click", () => {
 
         <div class="ctn-cartel-aviso-no-found-wsp">
           <div class="cartel-aviso-no-found-wsp">
-            Falta reportar cantidad de STOCK en el producto: <br> 
+            Para poder enviar el mensaje a través de <span class="wsp-text">Whatsapp.</span><br>
+            Primero debe reportar cantidad de STOCK en el producto: <br> 
             <span class="name-product-error">${stockDataTitles}</span>
           </div>
           <a class="btn-to-product-error" href="#${stockDataIDs}" onclick="closeNav(stockDataPosition[0][0])">Ir al PRODUCTO</a>
