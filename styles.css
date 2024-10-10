@@ -1065,6 +1065,7 @@ width: 90%;      /* width: 100%; */
   position: fixed;
   background-color: black;
   width: 7%;
+  max-width: 27px;
   height: 100px;
   align-items: center;
   z-index: 14000;
