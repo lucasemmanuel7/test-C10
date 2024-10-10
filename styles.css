@@ -1101,6 +1101,7 @@ width: 90%;      /* width: 100%; */
   z-index: 8900;
 }
 
+.ctn-cartel-aviso-no-found-wsp,
 .ctn-cartel-aviso {
   display: flex;
   gap: 20px;
@@ -1131,6 +1132,7 @@ width: 90%;      /* width: 100%; */
   display: none;
 }
 
+.cartel-aviso-no-found-wsp,
 .cartel-aviso {
   /* display: none; */
   border: 1px solid rgb(240 46 170 / 40%);
@@ -3820,6 +3822,7 @@ filter: hue-rotate(90deg);
   display: flex;
 }
 
+.ctn-opacy-no-found-wsp,
 .ctn-delete-info__card,
 .ctn-delete-info-all-cards {
 
@@ -3841,11 +3844,13 @@ filter: hue-rotate(90deg);
   z-index: 555;
 }
 
+.ctn-opacy-no-found-wsp.visible,
 .ctn-delete-info__card.visible,
 .ctn-delete-info-all-cards.visible {
   display: flex;
 }
 
+.cartel-cristal-no-found-wsp,
 .delete-info__card,
 .delete-info-all-cards {
 
