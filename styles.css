@@ -4235,6 +4235,10 @@ filter: hue-rotate(90deg);
     height: 45px;
   }
 
+  .ctn-btn-question {
+    height: 94px;
+  }
+
   .btnToNavbar, 
   .btnToNavbarTwo {
     font-size: 16px;
