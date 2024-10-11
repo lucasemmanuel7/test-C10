@@ -4396,6 +4396,10 @@ filter: hue-rotate(90deg);
     right: 5px;
   }
 
+  .messages {
+    font-size: 11.2px;
+  }
+
 }
 
 
