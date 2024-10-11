@@ -953,7 +953,7 @@ for (let i = 0; i < allCards.length; i++) {
                     Falta reportar cantidad de STOCK en el producto: <br> 
                     <span class="name-product-error">${nameProductError}</span>
                   </div>
-                  <a class="btn-to-product-error" href="#${idProduct}">Ir al PRODUCTO</a>
+                  <a class="btn-to-product-error" href="#${idProduct}" onclick="closeNav(i)">Ir al PRODUCTO</a>
                 </div>
               `
 
