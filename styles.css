@@ -1103,6 +1103,7 @@ border: 1px solid #000000; */
 
 .container_cards img.alf-maicena {
   width: 50%;
+  min-width: 88px;
   max-width: 92px;
 } 
 
