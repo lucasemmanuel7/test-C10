@@ -1063,11 +1063,12 @@ border: 1px solid #000000; */
 .ctn-btn-question {
   display: flex;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   width: 7%;
   max-width: 27px;
   height: 100px;
-  align-items: center;
   z-index: 14000;
   left: 0;
   top: 50%;
@@ -1076,6 +1077,9 @@ border: 1px solid #000000; */
 }
 
 .btn-icon-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 85%;
   font-size: 20px;
