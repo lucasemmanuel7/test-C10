@@ -1097,6 +1097,7 @@ border: 1px solid #000000; */
 
 .container_cards img.product_img_first {
    width: 73%;
+   max-width: 154px;
 } 
 
 .container_cards img.alf-maicena {
