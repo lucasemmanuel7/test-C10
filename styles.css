@@ -1065,6 +1065,7 @@ border: 1px solid #000000; */
   position: fixed;
   background-color: black;
   width: 7%;
+  max-width: 27px;
   height: 100px;
   align-items: center;
   z-index: 14000;
@@ -4609,7 +4610,7 @@ filter: hue-rotate(90deg);
 
 @media screen and (min-width:700px){
   .container_cards{
-      width: 90%;
+      width: 92%;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
       /* grid-template-rows: 200px; */
